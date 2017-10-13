@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bodoni72-Book-SmallCaps.ttf">
+            <string>BodoniSvtyTwoSCITCTT-Book</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="instagramgrandient" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eo8-Nb-hGK" customClass="UIViewx" customModule="instagramgrandient" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="375"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bando Khan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlV-mS-UFy">
+                                        <rect key="frame" x="15" y="33" width="384" height="61"/>
+                                        <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="39"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="mlV-mS-UFy" secondAttribute="bottom" constant="281" id="6D7-sa-ofL"/>
+                                    <constraint firstItem="mlV-mS-UFy" firstAttribute="leading" secondItem="eo8-Nb-hGK" secondAttribute="leading" constant="15" id="GLr-n7-RdW"/>
+                                    <constraint firstItem="mlV-mS-UFy" firstAttribute="centerX" secondItem="eo8-Nb-hGK" secondAttribute="centerX" id="TPq-xB-NZC"/>
+                                    <constraint firstItem="mlV-mS-UFy" firstAttribute="top" secondItem="eo8-Nb-hGK" secondAttribute="top" constant="33" id="gZP-6I-Qeo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="first">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="second">
+                                        <color key="value" red="0.058823529630000003" green="0.180392161" blue="0.24705882370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LjZ-ho-b06">
+                                <rect key="frame" x="0.0" y="129" width="465" height="0.0"/>
+                                <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eo8-Nb-hGK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5tW-Nb-Lj6"/>
+                            <constraint firstItem="eo8-Nb-hGK" firstAttribute="leading" secondItem="LjZ-ho-b06" secondAttribute="leading" id="FMM-Xi-KV9"/>
+                            <constraint firstItem="eo8-Nb-hGK" firstAttribute="bottom" secondItem="LjZ-ho-b06" secondAttribute="bottom" constant="246" id="Qar-99-9JC"/>
+                            <constraint firstAttribute="trailing" secondItem="eo8-Nb-hGK" secondAttribute="trailing" id="V3D-sh-Dtf"/>
+                            <constraint firstItem="eo8-Nb-hGK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gyz-bE-oDC"/>
+                            <constraint firstItem="LjZ-ho-b06" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="109" id="pD2-LQ-5OI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LjZ-ho-b06" secondAttribute="trailing" constant="-71" id="pp7-gG-axx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gradient" destination="eo8-Nb-hGK" id="a7K-1D-ayQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="173.91304347826087" y="25.271739130434785"/>
+        </scene>
+    </scenes>
+</document>
